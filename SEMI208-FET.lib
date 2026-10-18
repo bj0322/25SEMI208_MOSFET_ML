@@ -1,0 +1,44 @@
+model NSEMI NMOS LEVEL=8
++ TOX     = 4e-8
++ VTH0    = 0.6
++ U0      = 500
++ VSAT    = 8e4
++ VOFF    = -0.08
++ ETA0    = 0.08
++ CIT     = 0
++ PCLM    = 1.0
++ PDIBLC1 = 0.2       PDIBLC2 = 0.01   PDIBLCB = 0
++ DROUT   = 0.5
++ CDSC    = 2e-4      CDSCB  = 0      CDSCD   = 0
++ RDSW    = 0         RDSWMIN = 0
++ PRWG    = 1.0       PRWB   = 0.0    WR      = 1.0
++ WINT    = 0         LINT   = 0
++ DWG     = 0         DWB    = 0
++ CAPMOD  = 2
++ ACMOD   = 0
++ XPART   = 0.4
+
+.model PSEMI PMOS LEVEL=8
++ TOX     = 4e-8
++ NCH     = 2e17      NSUB   = 5e16
++ VTH0    = -0.7
++ K1      = 0.5       K2     = 0.01
++ W0      = 2e-6      LPE0   = 1e-7   LPEB = 0
++ U0      = 200       UA     = 1e-9   UB    = 1e-18   UC = -1e-10
++ VSAT    = 7e4
++ A0      = 1.0       A1     = 0.0    A2    = 1.0
++ VOFF    = 0.05
++ NFACTOR = 1.3
++ ETA0    = 0.06      ETAB   = -0.04
++ CIT     = 0
++ PCLM    = 1.1
++ PDIBLC1 = 0.22      PDIBLC2 = 0.012  PDIBLCB = 0
++ DROUT   = 0.6
++ CDSC    = 2e-4      CDSCB  = 0      CDSCD   = 0
++ RDSW    = 0         RDSWMIN = 0
++ PRWG    = 1.0       PRWB   = 0.0    WR      = 1.0
++ WINT    = 0         LINT   = 0
++ DWG     = 0         DWB    = 0
++ CAPMOD  = 2
++ ACMOD   = 0
++ XPART   = 0.4
